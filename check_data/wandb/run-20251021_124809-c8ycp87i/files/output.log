@@ -1,0 +1,35 @@
+[1m============================================================= test session starts ==============================================================[0m
+platform linux -- Python 3.13.9, pytest-8.4.2, pluggy-1.6.0 -- /home/dtay_dev/miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/check_data
+collected 4 items                                                                                                                              [0m
+
+test_data.py::test_column_presence_and_type [32mPASSED[0m
+test_data.py::test_class_names [32mPASSED[0m
+test_data.py::test_column_ranges [32mPASSED[0m
+test_data.py::test_kolmogorov_smirnov [32mPASSED[0m
+
+[33m=============================================================== warnings summary ===============================================================[0m
+../../../../../../miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249
+  /home/dtay_dev/miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+../../../../../../miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249
+  /home/dtay_dev/miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+../../../../../../miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/wandb/analytics/sentry.py:263
+../../../../../../miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/wandb/analytics/sentry.py:263
+  /home/dtay_dev/miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/wandb/analytics/sentry.py:263: DeprecationWarning: The `Scope.user` setter is deprecated in favor of `Scope.set_user()`.
+    self.scope.user = {"email": email}
+
+test_data.py::test_column_presence_and_type
+  /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/check_data/conftest.py:29: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample1 = pd.read_csv(local_path)
+
+test_data.py::test_column_presence_and_type
+  /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/check_data/conftest.py:32: DtypeWarning: Columns (15) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample2 = pd.read_csv(local_path)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[33m======================================================== [32m4 passed[0m, [33m[1m6 warnings[0m[33m in 3.43s[0m[33m =========================================================[0m

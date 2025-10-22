@@ -1,0 +1,42 @@
+{
+  "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "python": "CPython 3.13.9",
+  "startedAt": "2025-10-21T18:07:27.151037Z",
+  "args": [
+    "--input_artifact",
+    "genre_classifier_prod/preprocessed_data.csv:latest",
+    "--artifact_root",
+    "genres",
+    "--artifact_type",
+    "segregated_data",
+    "--test_size",
+    "0.3",
+    "--random_state",
+    "42",
+    "--stratify",
+    "genre"
+  ],
+  "program": "/home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/segregate/run.py",
+  "codePath": "lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/segregate/run.py",
+  "codePathLocal": "run.py",
+  "git": {
+    "remote": "https://github.com/de-taylor/d501-wgu.git",
+    "commit": "b127fbbaf56b52af74b95dcd289eda99425795dd"
+  },
+  "email": "dallas.taylor96@outlook.com",
+  "root": "/home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/segregate",
+  "host": "DET-WS",
+  "executable": "/home/dtay_dev/miniconda3/envs/mlflow-2b05c334639a6588d5c96ec48ecc7de59f6ca254/bin/python",
+  "cpu_count": 7,
+  "cpu_count_logical": 14,
+  "disk": {
+    "/": {
+      "total": "1081101176832",
+      "used": "19212972032"
+    }
+  },
+  "memory": {
+    "total": "8039104512"
+  },
+  "writerId": "a04ijx9vn61daqkjkme0nunxv12yzdi5"
+}

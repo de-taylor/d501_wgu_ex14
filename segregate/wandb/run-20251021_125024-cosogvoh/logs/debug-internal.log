@@ -1,0 +1,12 @@
+{"time":"2025-10-21T12:50:24.856092885-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2025-10-21T12:50:25.228380852-05:00","level":"INFO","msg":"stream: created new stream","id":"cosogvoh"}
+{"time":"2025-10-21T12:50:25.228439973-05:00","level":"INFO","msg":"stream: started","id":"cosogvoh"}
+{"time":"2025-10-21T12:50:25.228487097-05:00","level":"INFO","msg":"writer: started","stream_id":"cosogvoh"}
+{"time":"2025-10-21T12:50:25.228594948-05:00","level":"INFO","msg":"handler: started","stream_id":"cosogvoh"}
+{"time":"2025-10-21T12:50:25.228609821-05:00","level":"INFO","msg":"sender: started","stream_id":"cosogvoh"}
+{"time":"2025-10-21T12:50:26.559089078-05:00","level":"WARN","msg":"sender: sendUseArtifact: job builder disabled, skipping"}
+{"time":"2025-10-21T12:50:38.251955064-05:00","level":"INFO","msg":"stream: closing","id":"cosogvoh"}
+{"time":"2025-10-21T12:50:38.518598903-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T12:50:38.70598271-05:00","level":"INFO","msg":"handler: closed","stream_id":"cosogvoh"}
+{"time":"2025-10-21T12:50:38.706070188-05:00","level":"INFO","msg":"sender: closed","stream_id":"cosogvoh"}
+{"time":"2025-10-21T12:50:38.706075922-05:00","level":"INFO","msg":"stream: closed","id":"cosogvoh"}

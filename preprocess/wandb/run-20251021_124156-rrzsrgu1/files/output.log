@@ -1,0 +1,18 @@
+2025-10-21 12:41:57,444 Downloading artifact
+2025-10-21 12:41:58,794 Dropping duplicates
+2025-10-21 12:41:58,832 Feature engineering
+/home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/preprocess/run.py:30: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['title'].fillna(value='', inplace=True)
+/home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/preprocess/run.py:31: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['song_name'].fillna(value='', inplace=True)
+2025-10-21 12:41:59,134 Logging artifact

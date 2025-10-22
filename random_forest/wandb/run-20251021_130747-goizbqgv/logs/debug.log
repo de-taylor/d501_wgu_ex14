@@ -1,0 +1,24 @@
+2025-10-21 13:07:47,050 INFO    MainThread:29580 [wandb_setup.py:_flush():81] Current SDK version is 0.21.3
+2025-10-21 13:07:47,050 INFO    MainThread:29580 [wandb_setup.py:_flush():81] Configure stats pid to 29580
+2025-10-21 13:07:47,050 INFO    MainThread:29580 [wandb_setup.py:_flush():81] Loading settings from /home/dtay_dev/.config/wandb/settings
+2025-10-21 13:07:47,050 INFO    MainThread:29580 [wandb_setup.py:_flush():81] Loading settings from /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/random_forest/wandb/settings
+2025-10-21 13:07:47,050 INFO    MainThread:29580 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-21 13:07:47,051 INFO    MainThread:29580 [wandb_init.py:setup_run_log_directory():686] Logging user logs to /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/random_forest/wandb/run-20251021_130747-goizbqgv/logs/debug.log
+2025-10-21 13:07:47,051 INFO    MainThread:29580 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/random_forest/wandb/run-20251021_130747-goizbqgv/logs/debug-internal.log
+2025-10-21 13:07:47,051 INFO    MainThread:29580 [wandb_init.py:init():813] calling init triggers
+2025-10-21 13:07:47,051 INFO    MainThread:29580 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-10-21 13:07:47,051 INFO    MainThread:29580 [wandb_init.py:init():854] starting backend
+2025-10-21 13:07:47,267 INFO    MainThread:29580 [wandb_init.py:init():857] sending inform_init request
+2025-10-21 13:07:47,273 INFO    MainThread:29580 [wandb_init.py:init():865] backend started and connected
+2025-10-21 13:07:47,277 INFO    MainThread:29580 [wandb_init.py:init():936] updated telemetry
+2025-10-21 13:07:47,284 INFO    MainThread:29580 [wandb_init.py:init():960] communicating run to backend with 90.0 second timeout
+2025-10-21 13:07:47,794 INFO    MainThread:29580 [wandb_init.py:init():1011] starting run threads in backend
+2025-10-21 13:07:47,855 INFO    MainThread:29580 [wandb_run.py:_console_start():2494] atexit reg
+2025-10-21 13:07:47,855 INFO    MainThread:29580 [wandb_run.py:_redirect():2342] redirect: wrap_raw
+2025-10-21 13:07:47,855 INFO    MainThread:29580 [wandb_run.py:_redirect():2411] Wrapping output streams.
+2025-10-21 13:07:47,855 INFO    MainThread:29580 [wandb_run.py:_redirect():2434] Redirects installed.
+2025-10-21 13:07:47,859 INFO    MainThread:29580 [wandb_init.py:init():1057] run started, returning control to user process
+2025-10-21 13:07:49,239 INFO    MainThread:29580 [wandb_run.py:_config_callback():1380] config_cb None None {'random_forest': {'n_estimators': 100, 'criterion': 'gini', 'max_depth': 13, 'min_samples_split': 2, 'min_samples_leaf': 1, 'min_weight_fraction_leaf': 0.0, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'bootstrap': True, 'oob_score': False, 'n_jobs': None, 'random_state': 42, 'verbose': 0, 'warm_start': False, 'class_weight': 'balanced', 'ccp_alpha': 0.0, 'max_samples': None}, 'tfidf': {'max_features': 10}, 'features': {'numerical': ['danceability', 'energy', 'loudness', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo', 'duration_ms'], 'categorical': ['time_signature', 'key'], 'nlp': ['text_feature']}, 'export_artifact': 'model_export'}
+2025-10-21 13:08:13,544 INFO    wandb-AsyncioManager-main:29580 [service_client.py:_forward_responses():84] Reached EOF.
+2025-10-21 13:08:13,544 INFO    wandb-AsyncioManager-main:29580 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

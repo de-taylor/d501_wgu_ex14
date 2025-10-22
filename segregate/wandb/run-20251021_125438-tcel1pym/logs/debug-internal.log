@@ -1,0 +1,12 @@
+{"time":"2025-10-21T12:54:38.659126932-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2025-10-21T12:54:38.966761307-05:00","level":"INFO","msg":"stream: created new stream","id":"tcel1pym"}
+{"time":"2025-10-21T12:54:38.966839617-05:00","level":"INFO","msg":"stream: started","id":"tcel1pym"}
+{"time":"2025-10-21T12:54:38.966950157-05:00","level":"INFO","msg":"writer: started","stream_id":"tcel1pym"}
+{"time":"2025-10-21T12:54:38.967002224-05:00","level":"INFO","msg":"handler: started","stream_id":"tcel1pym"}
+{"time":"2025-10-21T12:54:38.967052676-05:00","level":"INFO","msg":"sender: started","stream_id":"tcel1pym"}
+{"time":"2025-10-21T12:54:40.161688516-05:00","level":"WARN","msg":"sender: sendUseArtifact: job builder disabled, skipping"}
+{"time":"2025-10-21T12:54:42.461975984-05:00","level":"INFO","msg":"stream: closing","id":"tcel1pym"}
+{"time":"2025-10-21T12:54:42.828731794-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T12:54:43.047965336-05:00","level":"INFO","msg":"handler: closed","stream_id":"tcel1pym"}
+{"time":"2025-10-21T12:54:43.048223983-05:00","level":"INFO","msg":"sender: closed","stream_id":"tcel1pym"}
+{"time":"2025-10-21T12:54:43.048240294-05:00","level":"INFO","msg":"stream: closed","id":"tcel1pym"}

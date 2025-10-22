@@ -1,0 +1,43 @@
+_wandb:
+    value:
+        cli_version: 0.21.3
+        e:
+            qk172730dn2zrfh89if0dvrw1dj7btlt:
+                args:
+                    - --input_artifact
+                    - exercise_14/raw_data.parquet:latest
+                    - --artifact_name
+                    - preprocessed_data.csv
+                    - --artifact_type
+                    - preprocessed_data
+                    - --artifact_description
+                    - Preprocessed dataset
+                codePath: lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/preprocess/run.py
+                codePathLocal: run.py
+                cpu_count: 7
+                cpu_count_logical: 14
+                disk:
+                    /:
+                        total: "1081101176832"
+                        used: "17795772416"
+                email: dallas.taylor96@outlook.com
+                executable: /home/dtay_dev/miniconda3/envs/mlflow-428f3442275814dbf6350cf02d74496ce6bae3ac/bin/python
+                git:
+                    commit: b127fbbaf56b52af74b95dcd289eda99425795dd
+                    remote: https://github.com/de-taylor/d501-wgu.git
+                host: DET-WS
+                memory:
+                    total: "8039104512"
+                os: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35
+                program: /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/preprocess/run.py
+                python: CPython 3.13.9
+                root: /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/preprocess
+                startedAt: "2025-10-21T17:41:56.638029Z"
+                writerId: qk172730dn2zrfh89if0dvrw1dj7btlt
+        m: []
+        python_version: 3.13.9
+        t:
+            "4": 3.13.9
+            "5": 0.21.3
+            "12": 0.21.3
+            "13": linux-x86_64

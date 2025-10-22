@@ -1,0 +1,80 @@
+[1m============================================================= test session starts ==============================================================[0m
+platform linux -- Python 3.13.9, pytest-8.4.2, pluggy-1.6.0 -- /home/dtay_dev/miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/check_data
+collected 4 items                                                                                                                              [0m
+
+test_data.py::test_column_presence_and_type [32mPASSED[0m
+test_data.py::test_class_names [32mPASSED[0m
+test_data.py::test_column_ranges [32mPASSED[0m
+test_data.py::test_kolmogorov_smirnov [31mFAILED[0m
+
+=================================================================== FAILURES ===================================================================
+[31m[1m___________________________________________________________ test_kolmogorov_smirnov ____________________________________________________________[0m
+
+data = (       Unnamed: 0  danceability  ...                        title                                    text_feature
+0  ...9   0.945  ...       Best of Hardstyle 2020                         Best of Hardstyle 2020
+
+[41975 rows x 18 columns])
+ks_alpha = 0.05
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_kolmogorov_smirnov[39;49;00m(data, ks_alpha):[90m[39;49;00m
+    [90m[39;49;00m
+        sample1, sample2 = data[90m[39;49;00m
+    [90m[39;49;00m
+        columns = [[90m[39;49;00m
+            [33m"[39;49;00m[33mdanceability[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+            [33m"[39;49;00m[33menergy[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+            [33m"[39;49;00m[33mloudness[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+            [33m"[39;49;00m[33mspeechiness[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+            [33m"[39;49;00m[33macousticness[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+            [33m"[39;49;00m[33minstrumentalness[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+            [33m"[39;49;00m[33mliveness[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+            [33m"[39;49;00m[33mvalence[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+            [33m"[39;49;00m[33mtempo[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+            [33m"[39;49;00m[33mduration_ms[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+        ][90m[39;49;00m
+    [90m[39;49;00m
+        [90m# Bonferroni correction for multiple hypothesis testing[39;49;00m[90m[39;49;00m
+        [90m# (see my blog post on this topic to see where this comes from:[39;49;00m[90m[39;49;00m
+        [90m# https://towardsdatascience.com/precision-and-recall-trade-off-and-multiple-hypothesis-testing-family-wise-error-rate-vs-false-71a85057ca2b)[39;49;00m[90m[39;49;00m
+        alpha_prime = [94m1[39;49;00m - ([94m1[39;49;00m - ks_alpha)**([94m1[39;49;00m / [96mlen[39;49;00m(columns))[90m[39;49;00m
+    [90m[39;49;00m
+        [94mfor[39;49;00m col [95min[39;49;00m columns:[90m[39;49;00m
+    [90m[39;49;00m
+            ts, p_value = scipy.stats.ks_2samp(sample1[col], sample2[col])[90m[39;49;00m
+    [90m[39;49;00m
+            [90m# NOTE: as always, the p-value should be interpreted as the probability of[39;49;00m[90m[39;49;00m
+            [90m# obtaining a test statistic (TS) equal or more extreme that the one we got[39;49;00m[90m[39;49;00m
+            [90m# by chance, when the null hypothesis is true. If this probability is not[39;49;00m[90m[39;49;00m
+            [90m# large enough, this dataset should be looked at carefully, hence we fail[39;49;00m[90m[39;49;00m
+>           [94massert[39;49;00m p_value > alpha_prime[90m[39;49;00m
+[1m[31mE           assert np.float64(nan) > 0.005116196891823743[0m
+
+[1m[31mtest_data.py[0m:120: AssertionError
+[33m=============================================================== warnings summary ===============================================================[0m
+../../../../../../miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249
+  /home/dtay_dev/miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+../../../../../../miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249
+  /home/dtay_dev/miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+../../../../../../miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/wandb/analytics/sentry.py:263
+../../../../../../miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/wandb/analytics/sentry.py:263
+  /home/dtay_dev/miniconda3/envs/mlflow-8b8c5bbbcf30a4f621fb194c7af489e467ffbbf1/lib/python3.13/site-packages/wandb/analytics/sentry.py:263: DeprecationWarning: The `Scope.user` setter is deprecated in favor of `Scope.set_user()`.
+    self.scope.user = {"email": email}
+
+test_data.py::test_column_presence_and_type
+  /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/check_data/conftest.py:29: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample1 = pd.read_csv(local_path)
+
+test_data.py::test_column_presence_and_type
+  /home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/check_data/conftest.py:32: DtypeWarning: Columns (15) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample2 = pd.read_csv(local_path)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[36m[1m=========================================================== short test summary info ============================================================[0m
+[31mFAILED[0m test_data.py::[1mtest_kolmogorov_smirnov[0m - assert np.float64(nan) > 0.005116196891823743
+[31m=================================================== [31m[1m1 failed[0m, [32m3 passed[0m, [33m6 warnings[0m[31m in 3.22s[0m[31m ====================================================[0m

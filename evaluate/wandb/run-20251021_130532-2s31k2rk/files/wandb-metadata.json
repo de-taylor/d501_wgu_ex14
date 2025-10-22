@@ -1,0 +1,34 @@
+{
+  "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "python": "CPython 3.13.9",
+  "startedAt": "2025-10-21T18:05:32.783982Z",
+  "args": [
+    "--model_export",
+    "exercise_14/model_export:latest",
+    "--test_data",
+    "exercise_14/genres_test.csv:latest"
+  ],
+  "program": "/home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/evaluate/run.py",
+  "codePath": "lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/evaluate/run.py",
+  "codePathLocal": "run.py",
+  "git": {
+    "remote": "https://github.com/de-taylor/d501-wgu.git",
+    "commit": "b127fbbaf56b52af74b95dcd289eda99425795dd"
+  },
+  "email": "dallas.taylor96@outlook.com",
+  "root": "/home/dtay_dev/d501/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/starter/evaluate",
+  "host": "DET-WS",
+  "executable": "/home/dtay_dev/miniconda3/envs/mlflow-08ff023f74d8dc4ccd988e8d53bd7b56325212db/bin/python",
+  "cpu_count": 7,
+  "cpu_count_logical": 14,
+  "disk": {
+    "/": {
+      "total": "1081101176832",
+      "used": "19204796416"
+    }
+  },
+  "memory": {
+    "total": "8039104512"
+  },
+  "writerId": "lnojh8wu4uo52oq8ogfjhl8gnhvoe9sp"
+}
